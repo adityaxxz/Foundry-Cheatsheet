@@ -11,9 +11,10 @@ Foundry Book - [https://book.getfoundry.sh/](https://book.getfoundry.sh/)
 
 
 Foundry is made up of three components :
-[Forge](https://github.com/foundry-rs/foundry/tree/master/forge): Ethereum testing framework (like Truffle, Hardhat and DappTools).   
-[Cast](https://github.com/foundry-rs/foundry/tree/master/cast): CLI for interacting with EVM smart contracts, sending transactions and getting chain data.   
-[Anvil](https://github.com/foundry-rs/foundry/tree/master/anvil): local Ethereum node, similar to Ganache or Hardhat Network.
+
+[Forge](https://book.getfoundry.sh/forge/): Ethereum testing framework (like Truffle, Hardhat and DappTools).   
+[Cast](https://book.getfoundry.sh/cast/): CLI for interacting with EVM smart contracts, sending transactions and getting chain data.   
+[Anvil](https://book.getfoundry.sh/anvil/): local Ethereum node, similar to Ganache or Hardhat Network.
 
 Forge commands are the main focus of this cheatsheet.
 
