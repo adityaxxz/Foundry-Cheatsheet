@@ -162,7 +162,7 @@ contract ContractTest is Test {
 }
 ```
 
-Here, we are using `assertEq` to assert equality. You can view all of the assertion functions available [here](https://book.getfoundry.sh/reference/ds-test.html#asserting).
+Here, we are using `assertEq` to assert equality.
 
 
 The default behavior for `forge test` is to only display a summary of passing and failing tests. You can control this behavior by increasing the verbosity (using the `-v` flag). Each level of verbosity adds more information:
@@ -177,6 +177,15 @@ For our logs to show up, we need to run `test` with at least the `-vv` flag:
 ```sh
 forge test -vv
 ```
+
+### To run specific tests:
+
+__(`--match-path`)__ :  runs tests in source files matching the specified path.
+
+__(`--match-test`)__ :  runs tests matching the specified regex.
+
+__(`--match-contract`)__ : runs tests in contracts matching the specified regex.
+
 
 ### Cheatcodes
 
