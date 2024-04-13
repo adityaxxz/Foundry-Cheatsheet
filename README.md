@@ -65,6 +65,14 @@ You can execute tests by running the `forge test` script.
 forge test
 ```
 
+## Test Coverage
+
+Use this command to analyse the test coverage of the codebase :
+
+```sh
+forge coverage
+```
+
 Any contract with a function that starts with `test` is considered to be a test.
 
 ```solidity
@@ -83,17 +91,10 @@ It includes assertions such as:
 ```solidity
 assertTrue
 assertEq
-assertEqDecimal
-assertEq32
-assertEq0
 assertGt
-assertGtDecimal
 assertGe
-assertGeDecimal
 assertLt
-assertLtDecimal
 assertLe
-assertLeDecimal
 ```
 
 You can view all of the assertion functions available [here](https://book.getfoundry.sh/reference/ds-test.html#asserting).
