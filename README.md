@@ -29,7 +29,7 @@ forge init
 Or define a new folder in which to create your project:
 
 ```sh
-forge init my-app
+forge init my-sol-project
 ```
 
 This creates a new project with 4 folders:
@@ -89,8 +89,8 @@ Foundry uses `Dappsys Test` (DSTest) to provide basic logging and assertion func
 It includes assertions such as:
 
 ```solidity
-assertTrue
 assertEq
+assertTrue
 assertGt
 assertGe
 assertLt
@@ -181,11 +181,11 @@ forge test -vv
 
 ### To run specific tests:
 
-__(`--match-path`)__ :  runs tests in source files matching the specified path.
+__(`--match-path <path_here>`)__ :  runs tests in source files (../test/) matching the specified path.
 
-__(`--match-test`)__ :  runs tests matching the specified regex.
+__(`--mt <test_name_here>`)__ :  runs the matching test given.
 
-__(`--match-contract`)__ : runs tests in contracts matching the specified regex.
+__(`--match-contract <contract_name_here>`)__ : runs the tests in the contract given.
 
 
 ### Cheatcodes
@@ -302,16 +302,4 @@ You can easily print a pretty looking gas report of your tested functions:
 
 ```sh
 forge test --gas-report
-```
-
-### ABIs
-
-ABIs will be located in the `out` directory after running either a build with `forge build` or a deployment with a script.
-
-### Test Options
-
-You can get a full list of testing options by running the `--help` command:
-
-```sh
-forge test --help
 ```
