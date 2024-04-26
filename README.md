@@ -1,6 +1,7 @@
 # Foundry-Cheatsheet
-
-![foundry-banner](https://github.com/adityaxxz/Foundry-Cheatsheet/assets/104155306/406023c4-0fd9-4ab8-b727-8fb0086b0d9a)
+<p align="center">
+<img src="https://github.com/adityaxxz/Foundry-Cheatsheet/assets/104155306/406023c4-0fd9-4ab8-b727-8fb0086b0d9a" width=800>
+<br/>
 
 Foundry is a smart contract development toolchain.
 
@@ -165,19 +166,34 @@ contract ContractTest is Test {
 
 Here, we are using `assertEq` to assert equality.
 
+### Changing the verbosity of test:
 
 The default behavior for `forge test` is to only display a summary of passing and failing tests. You can control this behavior by increasing the verbosity (using the `-v` flag). Each level of verbosity adds more information:
 
 __Level 2 (`-vv`)__: Logs emitted during tests are also displayed. That includes assertion errors from tests, showing information such as expected vs actual.   
-__Level 3 (`-vvv`)__: Stack traces for failing tests are also displayed.   
+__Level 3 (`-vvv`)__: Stack traces for failing tests are also displayed.
 __Level 4 (`-vvvv`)__: Stack traces for all tests are displayed, and setup traces for failing tests are displayed.   
 __Level 5 (`-vvvvv`)__: Stack traces and setup traces are always displayed.
 
 For our logs to show up, we need to run `test` with at least the `-vv` flag:
 
 ```sh
-forge test -vv
+forge test -vvvv
 ```
+
+## Forge inspect
+Used to list specialized informations about the smart contracts
+
+```sh
+forge inspect <contract_name> <field_to_inspect>
+```
+The following fields can be used : abi, methods, events, bytecode, deployedBytecode, assembly, assemblyOptimized, methodIdentifiers, gasEstimates, storageLayout, devdoc, ir, irOptimized, metadata, userdoc, ewasm, errors. 
+
+__Example:__
+```
+forge inspect Counter methods  // will list all the methods/functions used inside the Counter contract
+```
+
 
 ### To run specific tests:
 
