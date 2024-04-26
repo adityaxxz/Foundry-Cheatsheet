@@ -1,6 +1,6 @@
 # Foundry-Cheatsheet
 <p align="center">
-<img src="https://github.com/adityaxxz/Foundry-Cheatsheet/assets/104155306/406023c4-0fd9-4ab8-b727-8fb0086b0d9a" width=800>
+<img src="https://github.com/adityaxxz/Foundry-Cheatsheet/assets/104155306/406023c4-0fd9-4ab8-b727-8fb0086b0d9a" width=600>
 <br/>
 
 Foundry is a smart contract development toolchain.
@@ -30,7 +30,7 @@ forge init
 Or define a new folder in which to create your project:
 
 ```sh
-forge init my-sol-project
+forge init <my_sol_project>
 ```
 
 This creates a new project with 4 folders:
