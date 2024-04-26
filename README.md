@@ -181,6 +181,18 @@ For our logs to show up, we need to run `test` with at least the `-vv` flag:
 forge test -vvvv
 ```
 
+### To run specific tests:
+__Example:__
+```sh
+forge test --mt <test_name_here>  
+```
+__(`--match-path <path_here>`)__ :  runs tests in source files (../test/) matching the specified path.
+
+__(`--mt <test_name_here>`)__ :  runs the matching test given.
+
+__(`--match-contract <contract_name_here>`)__ : runs the tests in the contract given.
+
+
 ## Forge inspect
 Used to list specialized informations about the smart contracts
 
@@ -195,16 +207,7 @@ forge inspect Counter methods  // will list all the methods/functions used insid
 ```
 
 
-### To run specific tests:
-
-__(`--match-path <path_here>`)__ :  runs tests in source files (../test/) matching the specified path.
-
-__(`--mt <test_name_here>`)__ :  runs the matching test given.
-
-__(`--match-contract <contract_name_here>`)__ : runs the tests in the contract given.
-
-
-### Cheatcodes
+## Cheatcodes
 
 Cheatcodes give you additional assertions, the ability to alter the state of the EVM, mock data, and more.
 
