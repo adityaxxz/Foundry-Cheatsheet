@@ -166,7 +166,7 @@ contract ContractTest is Test {
 
 Here, we are using `assertEq` to assert equality.
 
-### Changing the verbosity of test:
+### <ins>Changing the verbosity of test:</ins>
 
 The default behavior for `forge test` is to only display a summary of passing and failing tests. You can control this behavior by increasing the verbosity (using the `-v` flag). Each level of verbosity adds more information:
 
@@ -181,7 +181,7 @@ For our logs to show up, we need to run `test` with at least the `-vv` flag:
 forge test -vvvv
 ```
 
-### To run specific tests:
+### <ins>To run specific tests:</ins>
 __Example:__
 ```sh
 forge test --mt <test_name_here>  
@@ -240,7 +240,7 @@ emit log_uint(block.timestamp); // 1641070800
 
 See a reference of all of the cheatcodes [here](https://github.com/foundry-rs/foundry/tree/master/forge#cheat-codes)
 
-### Mocking a user
+### <ins>Mocking a user</ins>
 
 As mentioned, you can mock / emulate a user using either `.prank` or `.startPrank`. Let's take a look at how this might work.
 
@@ -273,7 +273,7 @@ function testBurn() public {
 }
 ```
 
-### Fuzzing
+### <ins>Fuzzing</ins>
 
 Fuzzing allows us to define function parameter types and the testing framework will populate these values at runtime.
 
@@ -315,7 +315,7 @@ contract ContractTest is Test {
 }
 ```
 
-### Gas
+### <ins>Gas</ins>
 
 You can easily print a pretty looking gas report of your tested functions:
 
