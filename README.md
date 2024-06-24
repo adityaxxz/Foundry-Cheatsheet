@@ -314,6 +314,13 @@ contract ContractTest is Test {
   }
 }
 ```
+### <ins>Gas Comparison</ins>
+
+You can genearate a file `.gas-snapshot` containing gas report of your tested functions in different lang. like huff/yul or sol:
+
+```sh
+forge snapshot
+```
 
 ### <ins>Gas</ins>
 
