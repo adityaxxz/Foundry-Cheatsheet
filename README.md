@@ -184,7 +184,7 @@ forge test -vvvv
 ### <ins>To run specific tests:</ins>
 __Example:__
 ```sh
-forge test --mt <test_name_here>  
+forge test --mt <test_name>  
 ```
 __(`--match-path <path_here>`)__ :  runs tests in source files (../test/) matching the specified path.
 
@@ -194,7 +194,7 @@ __(`--match-contract <contract_name_here>`)__ : runs the tests in the contract g
 
 ### <ins>To Debug tests:</ins>
 Used to open test debugger, to analyse the opcode, stack & memory.
-```
+```sh
 forge test --debug <test_name>
 ```
 ## Forge inspect
