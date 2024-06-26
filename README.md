@@ -192,7 +192,11 @@ __(`--mt <test_name_here>`)__ :  runs the matching test given.
 
 __(`--match-contract <contract_name_here>`)__ : runs the tests in the contract given.
 
-
+### <ins>To Debug tests:</ins>
+Used to open test debugger, to analyse the opcode, stack & memory.
+```
+forge test --debug <test_name>
+```
 ## Forge inspect
 Used to list specialized informations about the smart contracts
 
