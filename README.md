@@ -15,9 +15,8 @@ Foundry is made up of three components :
 
 [Forge](https://book.getfoundry.sh/forge/): Ethereum testing framework (like Truffle, Hardhat and DappTools).   
 [Cast](https://book.getfoundry.sh/cast/): CLI for interacting with EVM smart contracts, sending transactions and getting chain data.   
-[Anvil](https://book.getfoundry.sh/anvil/): local Ethereum node, similar to Ganache or Hardhat Network.
-
-[Chisel](https://book.getfoundry.sh/reference/chisel/) - Test and receive verbose feedback on Solidity inputs within a REPL environment.
+[Anvil](https://book.getfoundry.sh/anvil/): local Ethereum node, similar to Ganache or Hardhat Network.  
+[Chisel](https://book.getfoundry.sh/reference/chisel/): Test and receive verbose feedback on Solidity inputs within a REPL environment.
 
 Forge commands are the main focus of this cheatsheet.
 
